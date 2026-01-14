@@ -2,7 +2,7 @@
 //  1. Write a Java program that takes an integer (1â€“7) and prints 
 //  the corresponding day name (e.g., 1 â†’ Monday
  
-public class Switchcase {
+/*public class Switchcase {
 	public static void main(String[] args) {
 		int num=8;
     switch (num){
@@ -31,7 +31,7 @@ public class Switchcase {
 			System.out.println("Invalid");
 	}
 		}
-}
+}*/
 
 
 // 2.Accept two numbers and an operator (+, -, *, /) from the user 
@@ -162,14 +162,83 @@ public class Switchcase {
 */
 
 
+//Accept a day number (1-7) and print the day name (Monday to Sunday) using switch case.
+//Accept a grade (A, B, C, D, F) and print the remark using switch case.
+//Accept a month number (1-12) and print how many days the month has.
+//Accept a character and check whether it is a vowel or consonant using switch case.
+//Create a simple calculator using switch case (addition, subtraction, multiplication, division).
+//Accept a number between 1-4 and print the corresponding season:
+//1 + Summer
+//2 Rainy
+//3 + Winter
+//4 + Spring
+//Accept a vehicle type (Car, Bike, Bus, Truck) and print the toll tax amount using switch case.
+//Accept a color code (R, G, B, Y) and print the color name.
+//Accept a number 1-5 land print the star
+//Accept user choice (1-3):
+//1 Print "Start"
+//2 + Print "Stop"
+//3 + Print "Restart" 
+//Use switch case.
 
 
+//Accept a grade (A, B, C, D, F) and print the remark using switch case.
+/*import java.util.Scanner;
+public class Switchcase {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("grade (A, B, C, D, F)");
+		
+//		char grade='A';
+		char grade=sc.next().charAt(0);
+		
+		switch(grade) {
+		case 'A':
+			System.out.println("more better");
+		break;
+		case 'B':
+			System.out.println("better");
+		break;
+		case 'C':
+			System.out.println("best");
+		break;
+		case 'D':
+			System.out.println("good");
+		break;
+		case 'F':
+			System.out.println("fail");
+		break;
+		default:
+			System.out.println("Invalid Input");
+		} 
+		sc.close();
+	}
+	}*/
 
 
+//Accept a character and check whether it is a vowel or consonant using switch case.
+import java.util.Scanner;
+public class Switchcase {
+    public static void main(String[] args) {
+
+         char ch;
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter category (Domestic/Commercial/Industrial): ");
+        ch = sc.next().charAt(0);   
+
+        switch (ch) {
+            case 'A': case 'E': case 'O': case 'U': case 'I':
+                System.out.println("Vowel");
+                break;
 
 
-
-
+            default:
+                System.out.println("consonant");
+        }
+        sc.close();
+    }
+}
 
 
 
